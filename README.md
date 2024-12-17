@@ -11,13 +11,15 @@ Essas instruções permitirão que você obtenha uma cópia do projeto em opera�
 
 ### 📋 Pré-requisitos
 
-De que coisas você precisa para instalar o software e como instalá-lo?
+De que coisas você precisa para instalar o software e como instalá-lo? <br>
 
+Xampp
 ```
-<a href="https://www.apachefriends.org/download.html">Xampp</a>
+https://www.apachefriends.org/download.html 
 ```
+SGBD heidSQL
 ```
-<a href="https://www.heidisql.com/">SGBD heidSQL</a>
+https://www.heidisql.com/
 ```
 
 ### 🔧 Instalação
