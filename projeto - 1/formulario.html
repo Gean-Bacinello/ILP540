@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="projeto1.css">
+    <title>Formulario</title>
+</head>
+<body>
+    
+        <div id="topo">
+            <nav>
+                Projeto-1 |
+                <a href="quem.html">Quem</a> |
+                <a href="ancora.html">Âncoras</a> |
+                <a href="formulario.html">Formulário</a> |
+                <a href="relatorio.html">Relatório</a> |
+                <a href="javascript:history.go(-1);">Voltar</a>
+            </nav>
+        </div>
+        
+        
+        <div class="conteudo">  
+        <form action="./recebe.php" method="post">
+            <table>
+                <tr>
+                    <td colspan="2" class="tituloCor" >Bibiografias de materias</td>
+                </tr>
+                <tr>
+                    
+                    <td>ID Autor:</td>
+                    <td><input type="text" name="pkautor" maxlength="5" required></td>
+                </tr>
+                <tr>
+                    <td>Nome Completo do Autor:</td>
+                    <td><input type="text" name="txnomeautor" maxlength="250" required></td>
+                </tr>
+                <tr>
+                    <td>Logradouro ID:</td>
+                    <td><input type="text" name="fklogradouro"></td>
+                </tr>
+                <tr>
+                    <td>Complemento:</td>
+                    <td><input type="text" name="txcomplemento" maxlength="80"></td>
+                </tr>
+                <tr>
+                    <td>CEP:</td>
+                    <td><input type="text" name="nucepautor" maxlength="8"></td>
+                </tr>
+                <tr>
+                    <td>Data de Nascimento:</td>
+                    <td><input type="date" name="dtnascimento"></td>
+                </tr>
+                <tr>
+                    <td>Data de Cadastro:</td>
+                    <td><input type="date" name="dtcadautor" required></td>
+                </tr>
+    
+                <tr><td colspan="2" class="tituloCor">Telefone do Autor</td></tr>
+    
+                <tr>
+                    <td>ID Telefone:</td>
+                    <td><input type="text" name="pkautortel" maxlength="6" required></td>
+                </tr>
+               
+                <tr>
+                    <td>Tipo de Telefone:</td>
+                    <td>
+                        <select name="fktelefonetipo" required>
+                            <option value="celular">Celular</option>
+                            <option value="residencial">Residencial</option>
+                            <option value="comercial">Comercial</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Número de Telefone:</td>
+                    <td><input type="text" name="nutelefone" maxlength="15" required></td>
+                </tr>
+                <tr>
+                    <td>Data de Cadastro do Telefone:</td>
+                    <td><input type="date" name="dtcadautortel" required></td>
+                </tr>
+    
+                <tr><td colspan="2" class="tituloCor">Autoria de Livros</td></tr>
+    
+                <tr>
+                    <td>ID Autoria:</td>
+                    <td><input type="text" name="pkautoria" maxlength="20" required></td>
+                </tr>
+                <tr>
+                    <td>ID Livro:</td>
+                    <td><input type="text" name="fklivro" maxlength="20" required></td>
+                </tr>
+               
+                <tr>
+                    <td>Data de Cadastro da Autoria:</td>
+                    <td><input type="date" name="dtcadautoria" required></td>
+                </tr>
+    
+                <tr>
+                    <td></td>
+                    <td >
+                        <input type="reset" value="Limpar Campos">
+                        <input type="submit" value="Cadastrar">
+                    </td>
+                </tr>
+            </table>
+               
+        </form>
+    </div>
+
+    
+</body>
+</html>

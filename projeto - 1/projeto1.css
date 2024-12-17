@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+/* Estilo para links */
+a {
+    color: blue;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+/* Estilo geral do body */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FAF0E6; /* Cor LINEN */
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+/* Botões transparentes sem borda */
+button {
+    border: none;
+    background-color: transparent;
+}
+
+/* Topo (menu) */
+#topo {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    width: 100%;
+    border-bottom: 2px solid #000;
+    z-index: 1000; 
+}
+
+/* Links do menu */
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.conteudo{
+    padding-left: 15px;
+}
+
+
+/* Conteúdo principal */
+#conteudo {
+    padding-left: 14px;
+    text-align: left;
+}
+
+/* Linha horizontal personalizada */
+.HR50 {
+    border: none;
+    background-color: black;
+    height: 2px;
+    width: 50%;
+}
+
+/* Estilo para tabelas */
+table {
+    margin: 10px 0; 
+    border-collapse: collapse; 
+}
+
+td {
+    padding: 5px; /* Espaçamento interno das células */
+}
+
+/* Centralização da tabela */
+#Centertabela {
+  
+    margin-top: 40px;
+    padding-top: 5px;
+  
+}
+
+/* Estilo de âncora com padding lateral */
+.AncoraFormata {
+    padding-left: 15px;
+}
+
+/* Tabela com largura de 80% */
+.TableAncora {
+    width: 80%;
+}
+
+/* Tabela do relatório */
+.Tablerelatorio {
+    padding: 0px;
+    border-collapse: collapse;
+}
+
+.Tablerelatorio td {
+    padding: 5px;
+}
+
+/* Tabela com borda nas células */
+.Vertabela td {
+    border: 1px solid black;
+}
+
+/* Estilo para a coluna 1 */
+.coluna1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+}
+
+/* Estilo para o título */
+.tituloCor {
+    color: red;
+    font-size: 16px;
+    background-color: #40E0D0;
+}
+
+/* Estilo para os tópicos */
+.TopicoCor {
+    color: red;
+    font-size: 16px;
+}

@@ -1,0 +1,76 @@
+Projeto 1: HTML+CSS - Especificação
+-----------------------------------------------------------------------------------------------------------------------
+- ATIVE O SERVIDOR DE PÁGINA (abra o painel de controle do XAMPP e 'dispare' o Apache e o MySQL)
+  Deu pra ver que está sempre será a primeira instrução na execução de uma tarefa. Mas mesmo assim escreverei em todas.
+
+- Dentro do diretório localhost/SeuNomeCompleto/HTML-CSS/ crie um sub-diretório com nome PROJ.
+
+- Acesse o diretório PROJ. Para este diretório COPIE o seu arquivo .css mais completo usado em todas as tarefas.
+  É muito interessante que você tenha mantido as copias anteriores de todos os .css e escreva no .css do diretório
+  proj a definição de TODOS os seletores anteriormente definidos.
+
+- Troque o nome do arquivo .css para projeto.css.
+
+- CRIE e edite um arquivo com nome projeto.html contendo as TAGs que montam uma divisão em quadros na tela de entrada
+  do site. A Tela deve ser dividida em dois quadro. Na parte superior um quadro com 40 pixels de altura, ocupando toda
+  a largura da tela e com as bordas 'encostadas' no topo e laterais.
+  O quadro inferior deve ocupar toda a parte inferior da tela.
+
+- TODAS as páginas devem ter cor (#FAF0E6) - LINEN, EXCETO em Cabeçalhos de tabelas
+  (quando a cor de fundo deve ser #40E0D0).
+
+- Na parte superior da tela deve ser apresentado um menu com os seguintes dizeres:
+  Projeto-1 |   Quem   |   Ancoras   |   Formulário   |   Relatório   |   Voltar
+  * O termo 'Quem' deve acessar um arquivo com nome quem.html. Ao acessar este arquivo deve ser visto o mesmo 'Menu' no
+  topo da tela. Além disso, na parte da tela abaixo do menu deve ser visto um conjunto de TABELAS que implementam as
+  mesmas funcionalidades da tarefa-2.
+  * O termo 'Âncoras' deve acessar um arquivo com nome ancora.html. Ao acessar este arquivo deve ser visto o mesmo
+  'Menu' no topo da tela. Além disso, na parte da tela abaixo do menu deve ser visto um texto estruturado em forma
+  de âncoras (acesso interno). O texto deve tratar do seguinte tema:
+  "O trabalho em equipe e o impacto da Pandemia de COVID-19"; defina a apresente a estrutura de acessos internos
+  usando a TAG <IFRAME>...</IFRAME>.
+  * O termo 'Formulário' deve acessar um arquivo com nome formulario.html. Ao acessar este arquivo deve ser visto o
+  mesmo 'Menu' no topo da tela. Além disso, na parte da tela abaixo do menu deve ser visto um formulário para
+  entrada de dados montado com TAGs HTML (4 ou 5) que contemplem os dados a serem informados na tabela que cada aluno
+  recebeu para o desenvolvimento dos Projeto 1 e 2. Veja a lista Tabela-Alunos em:
+  [TARDE}:   https://www.fatecourinhos.edu.br/disciplinas/ilp540/exercprojs/20242/LST-Tabela-Aluno-Tarde.pdf
+  [NOITE}:   https://www.fatecourinhos.edu.br/disciplinas/ilp540/exercprojs/20242/LST-Tabela-Aluno-Noite.pdf
+  Os campos devem ser acompanhados com textos de orientação para a entrada de dados. Os textos e os campos devem estar
+  dentro de uma tabela com pelo menos 2 colunas. Na coluna da esquerda (em cada linha) deve ser apresentado o texto e
+  na coluna da direita deve ser apresentado o campo do formulário e texto complementares (se necessário).
+  Neste formulário devem ser disponibilizados os botões 'Limpar dados' (executando a função 'reset') e
+  'Processar dados' (executando a função 'submit'). Ambos os botões DEVEM ser apresentados na última linha da tabela
+  (inferior) e posicionados na coluna da direita da linha da tabela. O formulário deve acionar um programa escrito
+  em PHP que deve exibir os dados digitados nos campos do formulário.
+  * O termo 'Relatório' deve acessar um arquivo com nome relatorio.html. Ao acessar este arquivo deve ser visto o
+  mesmo 'Menu' no topo da tela. Além disso, na parte da tela abaixo do menu deve ser visto um título 'Relatório' e
+  abaixo deste título deve ser montada uma tabela com 20 linhas e 16 colunas. Em cada célula desta tabela deve ser
+  apresentado um texto formado assim: 'LiiCjj', onde ii é o número da linha sempre escrito com 2 digitos e jj é o
+  numero da coluna sempre escrito com 2 digitos.
+  * O termo 'Voltar' deve acessar a função history.go() com o valor do argumento -1.
+
+- Toda a estrutura da navegação deve ser implementada usando TAGs <DIV> ou <IFRAME> com uso do comando INCLUDE,
+  permitindo a inserção arquivos com TAGs.
+
+- Para ilustrar o funcionamento das páginas deste projeto foi gravado uma VA disponível em:
+  
+
+- TESTE SEU ARQUIVO
+  - Acesse seu navegador. Coloque o cursor no campo de endereços e digite:
+    http://localhost/SeuNome/HTML-CSS/tar3/tar3.html (o arquivo que será acessado é o tarefa3.html)
+  - Se necessário, altere seu arquivo e recarregue seu arquivo no navegador.
+- Gere um arquivo compactado do diretório SeuNomeCompleto onde existe o diretório HTML-CSS e onde foram criados os três diretórios (tar1, tar2 e tar3)
+
+** Especificação do que montar na página está no site:
+https://www.fatecourinhos.edu.br/disciplinas/ilp540/ilp540.php
+
+O estudo das TAGs HTML e seletores CSS pode ser iniciado no site:
+https://www.w3schools.com/html/default.asp
+https://www.w3schools.com/css/default.asp
+
+Se for necessário consulte outros tutoriais.
+As cores podem ser escolhidas e visualizadas no site:
+https://coolors.co/
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Documento revisado em: 2024-09-16 - 12:41
