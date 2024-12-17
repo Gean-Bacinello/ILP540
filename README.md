@@ -1,7 +1,42 @@
 # ILP540
  projeto desenvolvido para a materia ILP540 "Linguagem de Programação para internet" FATEC-Ourinhos. <br>
  Seguindo as especificações estabelecidas pelo professor: Cores, fontes, tabulação, funcionalidades. <br>
- modelo feito com base na tabela SQL faturavendas do professor Joao Mauricio Hypolito.
+ modelo feito com base na tabela SQL faturavendas do professor Joao Mauricio Hypolito. <br><br>
+
+
+ ## 🚀 Começando
+
+Essas instruções permitirão que você obtenha uma cópia do projeto em operação na sua máquina local para fins de desenvolvimento e teste.
+
+
+### 📋 Pré-requisitos
+
+De que coisas você precisa para instalar o software e como instalá-lo?
+
+```
+Xampp
+```
+```
+SGBD heidSQL
+```
+
+### 🔧 Instalação
+
+Uma série de exemplos passo-a-passo que informam o que você deve executar para ter um ambiente de desenvolvimento em execução.
+
+Diga como essa etapa será:
+
+```
+Dar exemplos
+```
+
+E repita:
+
+```
+Até finalizar
+```
+
+Termine com um exemplo de como obter dados do sistema ou como usá-los para uma pequena demonstração.
 
 
 <h2>Tela Inicial do programa</h2>
