@@ -23,7 +23,7 @@
 
 
 <h2>Tela de listagem</h2>
-<img src="(https://github.com/user-attachments/assets/9c9139e7-e3e8-41ac-b8e1-723b9978894a">
+<img src="https://github.com/user-attachments/assets/9c9139e7-e3e8-41ac-b8e1-723b9978894a">
 
 <h2>Tela de impressão</h2>
 <img src="https://github.com/user-attachments/assets/8ef9261b-c2df-426d-9de9-73189efdda3c">
