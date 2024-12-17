@@ -24,7 +24,7 @@ https://www.heidisql.com/
 
 ### 🔧 Instalação
 
-Uma série de exemplos passo-a-passo que informam o que você deve executar para ter um ambiente de desenvolvimento em execução.
+Executar o script base-ilp540-20242 (4).sql no heideSQL.
 
 Diga como essa etapa será:
 

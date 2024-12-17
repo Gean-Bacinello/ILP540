@@ -280,61 +280,59 @@ switch (true) {
         }
         break;
 
-    case ($acoes == "Alterar"):
-        // Escolha do registro a "Alterar"
-        {
-            switch(TRUE)
+        case ($acoes == "Alterar"):
+            // Escolha do registro a "Alterar"
             {
-                case ( $bloco==1):
-                {# escolha do registro a  alterar
-                    picklist($acoes, $salto);
-                    break;
-                }
-
-                case ($bloco==2):
-                {# construção do fromulario com osdados do registro escolhido
-                    # lendo o registro da tabela e "vetorizando" os dados,   value='$reg[]' 22:22
-                    $reg=mysqli_fetch_array(mysqli_query($link, "SELECT * FROM faturasvendas WHERE pkfaturavenda='$_REQUEST[pkfaturasvendas]'"));
-                    printf("<form action='./faturasvendas.php' method='POST'>\n");  
-                    printf("<input type='hidden' name='acoes' value='$acoes'>\n");
-                    printf("<input type='hidden' name='bloco' value='3'>\n");
-                    printf("<input type='hidden' name='salto' value='$salto'>\n");
-                    printf("<input type='hidden' name='pkfaturasvendas' value='%s'>\n", $_REQUEST['pkfaturasvendas']);
-
-                    printf("<table>");
-                    printf("<tr><td>Código:</td>                  <td> O código será gerado pelo Sistema</td></tr>\n");
-                     
-                    printf("<tr><td>Vencimento:</td>              <td><input type='date' name='dtvencimento' value='$reg[dtvencimento]'></td></tr>\n"); 
-                    printf("<tr><td>Valor:</td>                   <td><input type='number' name='vlfatura' value='$reg[vlfatura]' placeholder='Números' size=12></td></tr>\n");
+                switch(TRUE)
+                {
+                    case ( $bloco==1):
+                    {# escolha do registro a  alterar
+                        picklist($acoes, $salto);
+                        break;
+                    }
     
-                    printf("<tr><td></td><td colspan='2'><hr style='border: 1px solid #737373;'></td></tr>");
-                    printf("<tr><td>Desconto:</td>          <td><input type='number' name='vldesconto' value='$reg[vldesconto]' placeholder='Números'></td></tr>");
-
-                    printf("<tr><td>Valor Líquido:</td>           <td><input type='number' name='vlliquido'  value='$reg[vlliquido]' placeholder='Números' ></td></tr>");
-                    printf("<tr><td>Multa:</td>                   <td><input type='number' name='vlmulta' value='$reg[vlmulta]' placeholder='Números'></td></tr>");
-                    printf("<tr><td>Juros:</td>                   <td><input type='number' name='vljuros' value='$reg[vljuros]' placeholder='Números'></td></tr>");
+                    case ($bloco==2):
+                    {# construção do fromulario com osdados do registro escolhido
+                        # lendo o registro da tabela e "vetorizando" os dados,   value='$reg[]' 22:22
+                        $reg=mysqli_fetch_array(mysqli_query($link, "SELECT * FROM faturasvendas WHERE pkfaturavenda='$_REQUEST[pkfaturasvendas]'"));
+                        printf("<form action='./faturasvendas.php' method='POST'>\n");  
+                        printf("<input type='hidden' name='acoes' value='$acoes'>\n");
+                        printf("<input type='hidden' name='bloco' value='3'>\n");
+                        printf("<input type='hidden' name='salto' value='$salto'>\n");
+                        printf("<input type='hidden' name='pkfaturasvendas' value='%s'>\n", $_REQUEST['pkfaturasvendas']);
     
-                    printf("<tr><td></td><td colspan='2'><hr style='border: 1px solid #737373;'></td></tr>");
-                    printf("<tr><td>Data de Criação:</td>         <td><input type='date' name='dtcriacaofatura'  value='$reg[dtcriacaofatura]' ></td></tr>");
-                    printf("<tr><td>Data de Cadastro:</td>        <td><input type='date' name='dtcadfatura'  value='$reg[dtcadfatura]'></td></tr>");
-                    
-                    printf("<tr><td></td><td colspan='2'><hr style='border: 1px solid #737373;'></td></tr>");
-                    printf("<tr><td>Nota Fiscal:</td>               <td><input type='number' name='fknunfvenda' value='$reg[fknunfvenda]' size=12 </td></tr>");
+                        printf("<table>");
+                        printf("<tr><td>Código:</td>                  <td> O código será gerado pelo Sistema</td></tr>\n");
+                         
+                        printf("<tr><td>Vencimento:</td>              <td><input type='date' name='dtvencimento' value='$reg[dtvencimento]'></td></tr>\n"); 
+                        printf("<tr><td>Valor:</td>                   <td><input type='number' name='vlfatura' value='$reg[vlfatura]' placeholder='Números' size=12></td></tr>\n");
+        
+                        printf("<tr><td></td><td colspan='2'><hr style='border: 1px solid #737373;'></td></tr>");
+                        printf("<tr><td>Desconto:</td>          <td><input type='number' name='vldesconto' value='$reg[vldesconto]' placeholder='Números'></td></tr>");
+    
+                        printf("<tr><td>Valor Líquido:</td>           <td><input type='number' name='vlliquido'  value='$reg[vlliquido]' placeholder='Números' ></td></tr>");
+                        printf("<tr><td>Multa:</td>                   <td><input type='number' name='vlmulta' value='$reg[vlmulta]' placeholder='Números'></td></tr>");
+                        printf("<tr><td>Juros:</td>                   <td><input type='number' name='vljuros' value='$reg[vljuros]' placeholder='Números'></td></tr>");
+        
+                        printf("<tr><td></td><td colspan='2'><hr style='border: 1px solid #737373;'></td></tr>");
+                        printf("<tr><td>Data de Criação:</td>         <td><input type='date' name='dtcriacaofatura'  value='$reg[dtcriacaofatura]' ></td></tr>");
+                        printf("<tr><td>Data de Cadastro:</td>        <td><input type='date' name='dtcadfatura'  value='$reg[dtcadfatura]'></td></tr>");
+                        
+                        printf("<tr><td></td><td colspan='2'><hr style='border: 1px solid #737373;'></td></tr>");
+                        printf("<tr><td>Nota Fiscal:</td>               <td><input type='number' name='fknunfvenda' value='$reg[fknunfvenda]' size=12> </td></tr>");
 
-                    printf("<tr><td></td><td>");
-                    botoes($acoes, TRUE, TRUE, $salto);  
-                    printf("</td></tr>\n");
-                    printf("</table>\n");
-                    printf("</form>\n");
-
-                    break;
-                }
-
-                case ($bloco==3):
-                    { # tratamento da transação
-                     
-                        # COnstrução do camando de atualização.
-                        // Corrigindo o comando SQL para excluir o registro com a chave primária correta
+                        printf("<tr><td></td><td>");
+                        botoes($acoes, TRUE, TRUE, $salto);  
+                        printf("</td></tr>\n");
+                        printf("</table>\n");
+                        printf("</form>\n");
+    
+                        break;
+                    }
+    
+                    case ($bloco == 3):
+                    { 
+                        # Execução da alteração
                         $cmdsql = "UPDATE faturasvendas  SET    dtvencimento    = '$_REQUEST[dtvencimento]',
                                                                 vlfatura        = '$_REQUEST[vlfatura]',
                                                                 vldesconto      = '$_REQUEST[vldesconto]',
@@ -343,48 +341,42 @@ switch (true) {
                                                                 vljuros         = '$_REQUEST[vljuros]',
                                                                 dtcriacaofatura = '$_REQUEST[dtcriacaofatura]',
                                                                 dtcadfatura     = '$_REQUEST[dtcadfatura]',
-                                                                fknunfvenda     = '$_REQUEST[fknunfvenda]',
-                                              WHERE pkfaturavenda = '$_REQUEST[pkfaturasvendas]'";
-        
-                        // Executando a transação de exclusão
+                                                                fknunfvenda     = '$_REQUEST[fknunfvenda]'
+                                            WHERE pkfaturavenda = '$_REQUEST[pkfaturasvendas]'";
+            
+                        # Controle de execução da transação
                         $tenta = TRUE;
                         while ($tenta) {
-                            // Inicia a transação
                             mysqli_query($link, "START TRANSACTION");
-        
-                            // Executa o comando de exclusão
                             mysqli_query($link, $cmdsql);
-        
+            
                             if (mysqli_errno($link) == 0) {
-                                // Se não houver erro, confirma a transação
                                 mysqli_query($link, "COMMIT");
                                 $tenta = FALSE;
-                                $mostrar=TRUE;
-                                $mens = "Registro com código $_REQUEST[pkfaturasvendas] Alterado com sucesso!";
+                                $mostrar = TRUE;
+                                $mens = "Registro com código $_REQUEST[pkfaturavenda] Alterado!";
                             } else {
-                                if (mysqli_errno($link) == 1213) {
-                                    // Se o erro for 1213 (deadlock), reinicia a transação
+                                if (mysqli_errno($link) == 1213) { 
+                                    # Deadlock, reinicia transação
                                     $tenta = TRUE;
-                                } else {
-                                    // Se for outro erro, aborta a transação
+                                } else { 
+                                    # Outro erro, aborta transação
                                     $tenta = FALSE;
                                     $mens = mysqli_errno($link) . " - " . mysqli_error($link);
                                 }
-                                // Se houve erro, desfaz a transação
-                                $mostrar=FALSE;
+                                $mostrar = FALSE;
                                 mysqli_query($link, "ROLLBACK");
                             }
                         }
-        
-                        // Exibe a mensagem de sucesso ou erro
+            
                         printf("$mens<br>\n");
-                        ($mostrar) ?  mostraregistro($_REQUEST['pkfaturasvendas'] , $acoes, $salto) : printf("") ;
+                        ($mostrar) ? mostraregistro("$_REQUEST[pkfaturavenda]", $acoes, $salto) : printf("");
                         break;
                     }
+                }
+                break;
             }
-
-        break;
-      }
+            
     case ($acoes == "Excluir"):
         switch (true) {
             case ($bloco == 1): // Monta o form com a picklist para escolher um registro
