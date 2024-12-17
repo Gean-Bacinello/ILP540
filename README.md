@@ -1,6 +1,6 @@
 # ILP540
- projeto desenvolvido para a materia ILP540 "Linguagem de Programação para internet" FATEC-Ourinhos.
- Seguindo as especificações estabelecidas pelo professor: Cores, fontes, tabulação, funcionalidades.
+ projeto desenvolvido para a materia ILP540 "Linguagem de Programação para internet" FATEC-Ourinhos. <br>
+ Seguindo as especificações estabelecidas pelo professor: Cores, fontes, tabulação, funcionalidades. <br>
  modelo feito com base na tabela SQL faturavendas do professor Joao Mauricio Hypolito.
 
 
