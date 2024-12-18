@@ -354,7 +354,7 @@ switch (true) {
                                 mysqli_query($link, "COMMIT");
                                 $tenta = FALSE;
                                 $mostrar = TRUE;
-                                $mens = "Registro com código $_REQUEST[pkfaturavenda] Alterado!";
+                                $mens = "Registro com código $_REQUEST[pkfaturasvendas] Alterado!";
                             } else {
                                 if (mysqli_errno($link) == 1213) { 
                                     # Deadlock, reinicia transação
@@ -370,7 +370,7 @@ switch (true) {
                         }
             
                         printf("$mens<br>\n");
-                        ($mostrar) ? mostraregistro("$_REQUEST[pkfaturavenda]", $acoes, $salto) : printf("");
+                        ($mostrar) ? mostraregistro("$_REQUEST[pkfaturasvendas]", $acoes, $salto) : printf("");
                         break;
                     }
                 }
