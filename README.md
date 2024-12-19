@@ -51,6 +51,11 @@ No navegador coloque o caminho do diretorio do projeto
 localhost/ILP540/projeto2/faturas-vendas/faturasvendas.php
 ```
 
+## ✒️ Autores
+
+
+* **Gean Bacinello** - *Desenvolvimento do Projeto* - [Gean Bacinello](https://github.com/Gean-Bacinello)
+
 
 <h2>Tela Inicial do programa</h2>
 <img src="https://github.com/user-attachments/assets/45ef1c9c-a808-419c-92f7-cd5048caf407">
