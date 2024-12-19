@@ -23,22 +23,33 @@ https://www.heidisql.com/
 ```
 
 ### 🔧 Instalação
+No Xampp:
 
+```
+Inicie o servidor apache e Mysql.
+```
+
+No canto direito do painel de controle do xampp acesse a opção explorer, selecione pasta  htdocs e coloque a pasta do projeto.
+
+```
+C:\xampp\htdocs
+```
+
+No HeideSQL criar um novo localhost, após isso instanciar um novo banco de dados com o seguinte nome "ilp540" pode ser alterado no catalogodefuncoes.php 
+
+```
+estrutura de conexão ("localhost", "root","", "ilp540").
+```
+
+```
 Executar o script base-ilp540-20242 (4).sql no heideSQL.
-
-Diga como essa etapa será:
-
-```
-Dar exemplos
 ```
 
-E repita:
+No navegador coloque o caminho do diretorio do projeto 
 
 ```
-Até finalizar
+localhost/ILP540/projeto2/faturas-vendas/faturasvendas.php
 ```
-
-Termine com um exemplo de como obter dados do sistema ou como usá-los para uma pequena demonstração.
 
 
 <h2>Tela Inicial do programa</h2>
